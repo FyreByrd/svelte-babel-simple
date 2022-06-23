@@ -1,38 +1,22 @@
-# create-svelte
+# svelte-babel-simple
+A simple repo intended to demonstrate import failure with `proskomma-tools`
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## Contents
+- svelte skeleton project
+- imported `proskomma-tools` npm package
 
-## Creating a project
+index.svelte:
+```svelte
+<script>
+    import {queries} from 'proskomma-tools';
 
-If you're seeing this, you've probably already done this step. Congrats!
+</script>
 
-```bash
-# create a new project in the current directory
-npm init svelte
-
-# create a new project in my-app
-npm init svelte my-app
+<pre>test successful</pre>
 ```
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+error message:
 ```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
+exports is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and 'svelte-babel-simple\node_modules\proskomma-tools\package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
 ```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
