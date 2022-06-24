@@ -19,6 +19,6 @@
   },
   "type": "module",
   "dependencies": {
-    "proskomma-tools": "^0.0.4"
+    "proskomma-tools": "^0.0.5"
   }
 }

@@ -1,6 +1,8 @@
 # svelte-babel-simple
 A simple repo intended to demonstrate import failure with `proskomma-tools`
 
+# **This works now that `proskomma-tools` 0.0.5 is out**
+
 ## Contents
 - svelte skeleton project
 - imported `proskomma-tools` npm package
